@@ -27,6 +27,13 @@ public class DfsEightQueens {
             }
         }
     }
+
+    /**
+     * @param column
+     * 判断是否重复
+     * 判断是否存在对角线冲撞
+     * @return
+     */
     private boolean iscollide(int column){
         for (int i=0;i<column;i++){
             if (queens[i]==queens[column]){
@@ -37,6 +44,10 @@ public class DfsEightQueens {
         System.out.println("cc");
         return true;
     }
+
+    /**
+     * 循环遍历展示所有可能结果
+     */
     private void print(){
         for (int i=0;i<8;i++){
             for (int j = 0; j < 8; j++) {
